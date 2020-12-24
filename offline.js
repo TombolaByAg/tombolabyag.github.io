@@ -5,12 +5,15 @@ self.addEventListener('install', function(event) {
       return cache.addAll(
         [
           // Main App
+          '/',
           '/index.html',
           '/style.css',
           '/script.js',
           // 404 Error
+          '/404',
           '/404.html',
           // Privacy Policy
+          '/privacy/',
           '/privacy/index.html',
           // Favicons
           '/site.webmanifest',
@@ -23,7 +26,7 @@ self.addEventListener('install', function(event) {
           '/touch-icon-iphone.png',
           '/touch-icon-ipad.png',
           '/touch-icon-iphone-retina.png',
-          '/touch-icon-ipad-retina.png',
+          '/touch-icon-ipad-retina.png'
         ]
       );
     })
