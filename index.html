@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="utf-8" />
+	<meta name="author" content="Alessio Giordano">
+	<meta name="description" content="Tombola by AG ti permette di giocare a tombola con una cartella realizzata casualmente">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Tombola by AG</title>
+	<script src="script.js"></script>
+	<meta name="apple-itunes-app" content="app-id=1508216655" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#bf6fa3">
+	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+</head>
+<body onload="loadTable()" onhashchange="loadTable()">
+	<h1 class="attendi">Attendi...</h1>
+	<div class="container">
+		<header>
+			<h1>Attiva Javascript</h1>
+			<p></p>
+		</header>
+		<div class="cartella magenta">
+			<div class="intestazione">
+				<div class="id">n. 1</div>
+				<div class="titolo"><span style="font-weight: 200;font-style: italic;">La</span>Tombola Telematica</div>
+				<div class="id">n. 1</div>
+			</div>
+			<div class="corpo">
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c0r0">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c0r1">
+							<div class="chiusura"></div>
+							<div class="numero">1</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c0r2">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c1r0">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c1r1">
+							<div class="chiusura"></div>
+							<div class="numero">11</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c1r2">
+							<div class="chiusura"></div>
+							<div class="numero">19</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c2r0">
+							<div class="chiusura"></div>
+							<div class="numero">22</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c2r1">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c2r2">
+							<div class="chiusura"></div>
+							<div class="numero">24</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c3r0">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c3r1">
+							<div class="chiusura"></div>
+							<div class="numero">36</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c3r2">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c4r0">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c4r1">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c4r2">
+							<div class="chiusura"></div>
+							<div class="numero">46</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c5r0">
+							<div class="chiusura"></div>
+							<div class="numero">52</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c5r1">
+							<div class="chiusura"></div>
+							<div class="numero">55</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c5r2">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c6r0">
+							<div class="chiusura"></div>
+							<div class="numero">64</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c6r1">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c6r2">
+							<div class="chiusura"></div>
+							<div class="numero">69</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c7r0">
+							<div class="chiusura"></div>
+							<div class="numero">71</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c7r1">
+							<div class="chiusura"></div>
+							<div class="numero">77</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c7r2">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="colonna">
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c8r0">
+							<div class="chiusura"></div>
+							<div class="numero">81</div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c8r1">
+							<div class="chiusura"></div>
+							<div class="numero"></div>
+						</div>
+					</div>
+					<div class="casella" onclick="toggle(event)">
+						<div class="cassone"></div>
+						<div class="finestra" id="c8r2">
+							<div class="chiusura"></div>
+							<div class="numero">87</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<footer>
+			<a href="https://apps.apple.com/app/id1508216655" target="_blank">Scarica l'app</a>
+			<a href="privacy/" target="_blank">Privacy</a>
+			<a href="mailto:tombola@alessiogiordano.net" target="_blank">Contatti</a>
+			<br><br>© Alessio Giordano 2020
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+:root {
+	color-scheme: light dark;
+}
+
+body {
+	margin: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: default;
+	-webkit-user-drag: none;
+	-khtml-user-drag: none;
+	-moz-user-drag: none;
+	-ms-user-drag: none;
+	-o-user-drag: none;
+	user-drag: none;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+h1, p, footer {
+	font-family: -apple-system, BlinkMacSystemFont, "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+	margin: 10px;
+}
+
+a {
+	margin: 0 5px;
+	color: rgb(191, 111, 163);
+}
+
+a:active {
+	color: rgb(221, 151, 203)
+}
+
+footer {
+	text-align: center;
+}
+
+header {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+header h1 {
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.attendi {
+	display: none;
+}
+
+.loading .container {
+	filter: blur(30px);
+}
+.loading .attendi {
+	display: block;
+	position: fixed;
+	height: 38px;
+	width: 135px;
+	z-index: 30;
+	top: 50vh;
+	left: 50vw;
+	margin-top: -19px;
+	margin-left: -67.5px;
+	overflow: hidden;
+}
+
+.cartella {
+	width: 90.48592683vmin;
+	height: 48.7231913683vmin;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	border-radius: 0.9208103131vmin;
+	padding: 0.696045591vmin;
+	box-shadow: darkgray 0.1841620626vmin 0.1841620626vmin 1.8416206262vmin;
+}
+.magenta {
+	background-color: rgb(207, 63, 69);
+}
+
+.sage {
+	background-color: rgb(17, 89, 56);
+}
+
+.intestazione {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-top: 0.696045591vmin;
+}
+
+.intestazione div {
+	height: 6.9604559098vmin;
+	/* **** */
+	font-size: 4.1762735459vmin;
+	color: rgb(191, 111, 163);
+	font-weight: bold;
+	text-align: center;
+	line-height: 6.9604559098vmin;
+	box-shadow: inset darkgray 0.1841620626vmin 0.1841620626vmin 1.8416206262vmin;
+	/* **** */
+	background-color: white;
+	border-radius: 0.9208103131vmin;
+	margin: 0.696045591vmin;
+}
+
+.id {
+	width: 20%;
+	font-size: 5.5683647278vmin!important;
+}
+
+.titolo {
+	width: 55%;
+}
+
+.corpo {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-bottom: 0.696045591vmin;
+}
+
+.colonna {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	width: 9%;
+	margin-bottom: 0.696045591vmin;
+}
+.casella {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+.loading .casella:hover {
+	filter: none;
+}
+.casella:hover {
+	filter: brightness(120%);
+	cursor: pointer;
+}
+.cassone {
+	height: 4.8723191368vmin;
+	width: 3.4802279549vmin;
+	background-color: white;
+	border-radius: 0.9208103131vmin;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	margin: 0.696045591vmin;
+	margin-bottom: 0;
+}
+.cassone::before { 
+	content: "";
+	position: absolute;
+	height: 4.8723191368vmin;
+	width: 3.4802279549vmin;
+	margin: auto;
+	border-radius: 0.9208103131vmin;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.finestra {
+	position: relative; /* per la chiusura */
+	height: 6.9604559098vmin;
+	width: 7.6565015007vmin;
+	/* **** */
+	font-size: 5.5683647278vmin;
+	color: rgb(191, 111, 163);
+	font-weight: bold;
+	text-align: center;
+	line-height: 6.9604559098vmin;
+	box-shadow: inset lightgray 0.1841620626vmin -0.696045591vmin 1.8416206262vmin;
+	/* **** */
+	background-color: white;
+	border-radius: 0.9208103131vmin;
+	margin: 0.696045591vmin;
+	margin-top: 0;
+	overflow: hidden;
+}
+.chiusura {
+	position: absolute;
+	width: 100%;
+	height: 0.4802279549vmin;
+}
+.chiuso .chiusura {
+	height: 6.1252012006vmin;
+}
+.magenta .cassone::before, .magenta .chiusura {
+	background-color: rgba(255, 143, 149, 0.7);
+}
+
+.magenta .chiusura {
+	border-bottom: 0.696045591vmin solid rgb(245, 103, 109);
+}
+
+.sage .cassone::before, .sage .chiusura {
+	background-color: rgba(97, 169, 136, 0.7);
+}
+
+.sage .chiusura {
+	border-bottom: 0.696045591vmin solid rgb(57, 129, 96);
+}
+
+@media (prefers-color-scheme: dark) {
+	.cartella {
+		box-shadow: rgba(0,0,0,0.7) 0.1841620626vmin 0.1841620626vmin 1.8416206262vmin;
+	}
+}
