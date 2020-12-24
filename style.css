@@ -35,11 +35,13 @@ h1, p, footer {
 
 a {
 	margin: 0 5px;
-	color: rgb(191, 111, 163);
+	color: #307bf6
+	/*color: rgb(191, 111, 163);*/
 }
 
 a:active {
-	color: rgb(221, 151, 203)
+	color: #65c366;
+	/*color: rgb(221, 151, 203)*/
 }
 
 footer {
@@ -222,5 +224,8 @@ header h1 {
 @media (prefers-color-scheme: dark) {
 	.cartella {
 		box-shadow: rgba(0,0,0,0.7) 0.1841620626vmin 0.1841620626vmin 1.8416206262vmin;
+	}
+	a {
+		color: #418cff
 	}
 }

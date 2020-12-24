@@ -3,23 +3,40 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="author" content="Alessio Giordano">
-	<meta name="description" content="Tombola by AG non raccoglie, conserva o trasmette alcun dato personale">
+	<meta name="description" lang="en" content="Tombola by AG does not collect, store, or transmit any personal information">
+	<meta name="description" lang="it" content="Tombola by AG non raccoglie, conserva o trasmette alcun dato personale">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="../style.css">
 	<title>Privacy Policy - Tombola by AG</title>
 	<meta name="apple-itunes-app" content="app-id=1508216655" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#bf6fa3">
-	<link rel="apple-touch-icon" href="touch-icon-iphone.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
-	<link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+	<link rel="manifest" href="../site.webmanifest">
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+	<link rel="mask-icon" href="../safari-pinned-tab.svg" color="#307bf6">
+	<link rel="apple-touch-icon" href="../touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="../touch-icon-ipad-retina.png">
 </head>
 <body style="margin: 1em">
-	<h1>Privacy Policy di Tombola by AG</h1>
-	<p>Tombola by AG non raccoglie, conserva o trasmette alcun dato personale</p>
+	<h1>Privacy Policy of Tombola by AG</h1>
+	<p>Tombola by AG does not collect, store, or transmit any personal information</p>
+	<script>
+		var lang;
+		var language = navigator.language || navigator.userLanguage;
+		switch(language.substring(0,2)) {
+			case "it": document.documentElement.lang = "it"; lang = "it"; break;
+			default: document.documentElement.lang = "en"; lang = "en"; break;
+		}
+		if (lang == "it") {
+			document.querySelector("h1").innerText = "Privacy Policy di Tombola by AG";
+			document.querySelector("p").innerText = "Tombola by AG non raccoglie, conserva o trasmette alcun dato personale";
+		} else {
+			document.querySelector("h1").innerText = "Privacy Policy of Tombola by AG";
+			document.querySelector("p").innerText = "Tombola by AG does not collect, store, or transmit any personal information";
+		}
+	</script>
 </body>
 </html>
