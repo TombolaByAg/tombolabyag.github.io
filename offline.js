@@ -1,7 +1,7 @@
 // Get Cache
 self.addEventListener('install', function(event) {
   event.waitUntil(
-    caches.open("Tombola v2.0").then(function(cache) {
+    caches.open("Tombola v2.0.1").then(function(cache) {
       return cache.addAll(
         [
           // Main App
