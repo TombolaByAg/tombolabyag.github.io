@@ -118,7 +118,7 @@ function restoreClosed() {
 	let storage = document.querySelector(".cartella").dataset.storage;
 	let backup = window.localStorage.getItem("progress://" + storage);
 	var i = 0;
-	if (backup != "") {
+	if ((backup != null) && (backup != "")) {
 		for(var column = 0; column < 9; column++) {
 			for(var row = 0; row < 3; row++) {
 				if (backup[i] == "1") {
@@ -167,7 +167,7 @@ function loadTable() {
 			titleEnd = jitsiBegin;
 		}
 		
-		var title = data.substring(titleBegin + 7, titleEnd).replace(/-/g, " ");
+		var title = decodeURIComponent(data.substring(titleBegin + 7, titleEnd)).replace(/-/g, " ");
 		document.querySelector("header h1").innerText = title;
 		var timestamp = data.substring(timeBegin + 6, timeBegin + 19);
 		var time = new Date(parseInt(timestamp));
