@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Redirect - Tombola Help</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<noscript>
+      <h1>Tombola Help</h1>
+      <a href="it/">Italiano</a>
+      <a href="en/">English</a>
+  </noscript>
+	<script>
+		var language = navigator.language || navigator.userLanguage;
+		switch(language.substring(0,2)) {
+			case "it": window.location = 'it/'; break;
+			default: window.location = 'en/'; break;
+		}
+	</script>
+</body>
+</html>
