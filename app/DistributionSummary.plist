@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Tombola.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>47CB743FEBDD2DAAC6887019EE40A99E18C8F96C</string>
+				<key>dateExpires</key>
+				<string>01/08/21</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>embeddedBinaries</key>
+			<array>
+				<dict>
+					<key>architectures</key>
+					<array>
+						<string>arm64</string>
+					</array>
+					<key>certificate</key>
+					<dict>
+						<key>SHA1</key>
+						<string>47CB743FEBDD2DAAC6887019EE40A99E18C8F96C</string>
+						<key>dateExpires</key>
+						<string>01/08/21</string>
+						<key>type</key>
+						<string>Apple Distribution</string>
+					</dict>
+					<key>entitlements</key>
+					<dict>
+						<key>application-identifier</key>
+						<string>U32349C7PN.net.alessiogiordano.tombola.iOSWidget</string>
+						<key>com.apple.developer.team-identifier</key>
+						<string>U32349C7PN</string>
+						<key>com.apple.security.application-groups</key>
+						<array>
+							<string>group.net.alessiogiordano.tombola</string>
+						</array>
+						<key>get-task-allow</key>
+						<false/>
+					</dict>
+					<key>name</key>
+					<string>Tombola iOS Widgets.appex</string>
+					<key>profile</key>
+					<dict>
+						<key>UUID</key>
+						<string>a813959f-fa3c-4237-beba-3af835073a7f</string>
+						<key>name</key>
+						<string>iOS Team Ad Hoc Provisioning Profile: net.alessiogiordano.tombola.iOSWidget</string>
+					</dict>
+					<key>team</key>
+					<dict>
+						<key>id</key>
+						<string>U32349C7PN</string>
+						<key>name</key>
+						<string>Alessio Giordano</string>
+					</dict>
+				</dict>
+			</array>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>U32349C7PN.net.alessiogiordano.tombola</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.associated-domains</key>
+				<array>
+					<string>tombola.alessiogiordano.net</string>
+					<string>tombola.alessiogiordano.com</string>
+				</array>
+				<key>com.apple.developer.icloud-container-environment</key>
+				<string>Production</string>
+				<key>com.apple.developer.icloud-container-identifiers</key>
+				<array>
+					<string>iCloud.net.alessiogiordano.tombola</string>
+				</array>
+				<key>com.apple.developer.icloud-services</key>
+				<array>
+					<string>CloudKit</string>
+				</array>
+				<key>com.apple.developer.team-identifier</key>
+				<string>U32349C7PN</string>
+				<key>com.apple.developer.ubiquity-kvstore-identifier</key>
+				<string>U32349C7PN.net.alessiogiordano.tombola</string>
+				<key>com.apple.security.application-groups</key>
+				<array>
+					<string>group.net.alessiogiordano.tombola</string>
+				</array>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>Tombola.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>00846324-a622-4b89-8392-a735546ddac5</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: net.alessiogiordano.tombola</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>U32349C7PN</string>
+				<key>name</key>
+				<string>Alessio Giordano</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
