@@ -9,12 +9,14 @@
 			<array>
 				<string>arm64</string>
 			</array>
+			<key>buildNumber</key>
+			<string>199</string>
 			<key>certificate</key>
 			<dict>
 				<key>SHA1</key>
-				<string>47CB743FEBDD2DAAC6887019EE40A99E18C8F96C</string>
+				<string>EA53B10B32E32E8370AB5BF273D74AADC64B785B</string>
 				<key>dateExpires</key>
-				<string>01/08/21</string>
+				<string>18/09/22</string>
 				<key>type</key>
 				<string>Apple Distribution</string>
 			</dict>
@@ -25,12 +27,14 @@
 					<array>
 						<string>arm64</string>
 					</array>
+					<key>buildNumber</key>
+					<string>199</string>
 					<key>certificate</key>
 					<dict>
 						<key>SHA1</key>
-						<string>47CB743FEBDD2DAAC6887019EE40A99E18C8F96C</string>
+						<string>EA53B10B32E32E8370AB5BF273D74AADC64B785B</string>
 						<key>dateExpires</key>
-						<string>01/08/21</string>
+						<string>18/09/22</string>
 						<key>type</key>
 						<string>Apple Distribution</string>
 					</dict>
@@ -52,7 +56,9 @@
 					<key>profile</key>
 					<dict>
 						<key>UUID</key>
-						<string>a813959f-fa3c-4237-beba-3af835073a7f</string>
+						<string>5252b94c-488f-4392-a821-8ea73fccbce7</string>
+						<key>dateExpires</key>
+						<string>19/09/22</string>
 						<key>name</key>
 						<string>iOS Team Ad Hoc Provisioning Profile: net.alessiogiordano.tombola.iOSWidget</string>
 					</dict>
@@ -63,6 +69,8 @@
 						<key>name</key>
 						<string>Alessio Giordano</string>
 					</dict>
+					<key>versionNumber</key>
+					<string>2.1</string>
 				</dict>
 			</array>
 			<key>entitlements</key>
@@ -102,7 +110,9 @@
 			<key>profile</key>
 			<dict>
 				<key>UUID</key>
-				<string>00846324-a622-4b89-8392-a735546ddac5</string>
+				<string>5aa83b35-a3ff-41e8-8941-a66f7adb6a6c</string>
+				<key>dateExpires</key>
+				<string>19/09/22</string>
 				<key>name</key>
 				<string>iOS Team Ad Hoc Provisioning Profile: net.alessiogiordano.tombola</string>
 			</dict>
@@ -113,6 +123,8 @@
 				<key>name</key>
 				<string>Alessio Giordano</string>
 			</dict>
+			<key>versionNumber</key>
+			<string>2.1</string>
 		</dict>
 	</array>
 </dict>
